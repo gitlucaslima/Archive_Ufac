@@ -1,0 +1,29 @@
+int menu(){
+	int opção;
+	do{
+		printf(“\n1 – Inserir”);
+		printf(“\n2 – Excuir”);		
+		printf(“\n3 – Consultar”);
+		printf(“\n4 – Sair”);	
+		scanf(“%d”, &opcao);	
+	while( opção <1 || opcao>4);
+	return opção;
+}
+int op = menu();
+	switch(op){
+		case 1: 
+			//inserir
+                                    break;
+		case 2: 
+			//excluir
+                                    break;
+		case 3: 
+			//consultar
+                                    break;
+		case 4:
+			// sair
+			break;
+		default:
+			// do anything
+			break;
+	};
