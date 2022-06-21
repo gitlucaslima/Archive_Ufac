@@ -2,7 +2,7 @@ fetch("http://jsonplaceholder.typicode.com/users")
 .then(r => r.json())
 .then(jsonBody=> {
         jsonBody.forEach(objeto => {
-            document.querySelector("#lista").innerHTML += `<li> ${ objeto.name} </li>`        
+            document.querySelector("#lista").innerHTML += `<li> ${ objeto.name} : ${ objeto.username} </li>`        
         })
     }
 ).catch(error => console.log('Algum problema no servidor: ' + error.message));
